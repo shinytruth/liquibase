@@ -2,13 +2,8 @@ spring:
   liquibase:
     enabled: true
   datasource:
-    url: jdbc:h2:tcp://localhost/~/h2-liq
-    username: star
-    password:
+    url: jdbc:cloudspanner:/projects/ajoara-dev/instances/ajoara-dev-instance/databases/ajoara
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: com.google.cloud.spanner.hibernate.SpannerDialect
     hibernate:
       ddl-auto: none
-  h2:
-    console:
-      enabled: true

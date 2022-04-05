@@ -1,4 +1,5 @@
 databaseChangeLog:
+- changeLogId: e143a687-8290-4e23-91a4-79f30324ec2a
   - changeSet:
       id: create-author
       author: MyungjinBae
